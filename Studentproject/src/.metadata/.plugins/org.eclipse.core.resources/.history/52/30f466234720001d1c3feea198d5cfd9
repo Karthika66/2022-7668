@@ -1,0 +1,24 @@
+package Inheritance;
+
+public class Dclass {
+		   int age;
+
+		   Dclass(int age) {
+		      this.age = age; 		 
+		   }
+
+		   public void getAge() {
+		      System.out.println("The value of the variable named age in super class is: " +age);
+		   }
+		}
+
+		public class Dclass extends Dclass {
+		   Dclass(int age) {
+		      super(age);
+		   }
+
+		   public static void main(String args[]) {
+		      Dclass s = new Dclass(24);
+		      s.getAge();
+		   }
+		}

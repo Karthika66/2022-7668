@@ -1,0 +1,21 @@
+package Inheritance;
+class Event {
+		  void start(){
+		  }
+		}
+		class Sports extends Event {
+		   void play() {
+		   }
+		}
+		class Hockey extends Sports{
+			void show(){
+		  }
+		   public static void main(String[] args){
+		      Hockey h = new Hockey() {
+		      h.start();
+		      h.play();
+		      h.show();
+		   };
+		
+}
+		}
